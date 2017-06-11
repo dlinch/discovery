@@ -42,8 +42,13 @@ def display_results(response):
     -------
     dict : a dictionary containing the json structure read from the file.
     """
-    print(json.dumps(response, indent=2))
-    
+    if 'value' in response["aggregations"][0]:
+        print(json.dumps(response["aggregations"][0]["value"], indent=2))
+    else:
+        print(json.dumps(response["aggregations"][0]["results"][0]["key"], indent=2))
+
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
