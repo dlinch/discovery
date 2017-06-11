@@ -1,0 +1,6 @@
+{
+  "query":"data science",
+  "count":5,
+  "filter":"enriched_text.docSentiment.type:negative",
+  "aggregation":"max(price)"
+}

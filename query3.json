@@ -1,0 +1,5 @@
+{
+  "query":"python",
+  "filter":"(enriched_text.docSentiment.type:positive, price<=50)",
+  "aggregation":"term(title)"
+}

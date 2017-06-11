@@ -1,0 +1,5 @@
+{
+  "query":"machine learning",
+  "filter":"enriched_text.docEmotions.fear>=0.25",
+  "aggregation":"average(price)"
+}
